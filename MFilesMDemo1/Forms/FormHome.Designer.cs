@@ -48,14 +48,14 @@ namespace MFilesMDemo2.Forms
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnAddApp = new System.Windows.Forms.Button();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.uiTableLayoutPanel1 = new Sunny.UI.UITableLayoutPanel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.searchBox1 = new MFilesMDemo1.MyUserControl.SearchBox();
             this.panelDesktop.SuspendLayout();
             this.uiTableLayoutPanel1.SuspendLayout();
@@ -81,7 +81,7 @@ namespace MFilesMDemo2.Forms
             this.panelDesktop.Controls.Add(this.button14);
             this.panelDesktop.Controls.Add(this.button15);
             this.panelDesktop.Controls.Add(this.button16);
-            this.panelDesktop.Controls.Add(this.button17);
+            this.panelDesktop.Controls.Add(this.btnAddApp);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(0, 42);
             this.panelDesktop.Name = "panelDesktop";
@@ -315,25 +315,25 @@ namespace MFilesMDemo2.Forms
             this.button16.TabIndex = 25;
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnAddApp
             // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(375, 95);
-            this.button17.Margin = new System.Windows.Forms.Padding(10);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(50, 50);
-            this.button17.TabIndex = 26;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnAddApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnAddApp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddApp.BackgroundImage")));
+            this.btnAddApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddApp.FlatAppearance.BorderSize = 0;
+            this.btnAddApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddApp.Location = new System.Drawing.Point(375, 95);
+            this.btnAddApp.Margin = new System.Windows.Forms.Padding(10);
+            this.btnAddApp.Name = "btnAddApp";
+            this.btnAddApp.Size = new System.Drawing.Size(50, 50);
+            this.btnAddApp.TabIndex = 26;
+            this.btnAddApp.UseVisualStyleBackColor = false;
             // 
             // iconButton2
             // 
             this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton2.BackColor = System.Drawing.Color.White;
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.ForeColor = System.Drawing.Color.Black;
@@ -348,30 +348,11 @@ namespace MFilesMDemo2.Forms
             this.iconButton2.Text = "全部类型";
             this.iconButton2.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton1.BackColor = System.Drawing.Color.White;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Black;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(130, 9);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(77, 24);
-            this.iconButton1.TabIndex = 11;
-            this.iconButton1.Text = "日常办公";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
             // iconButton3
             // 
             this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton3.BackColor = System.Drawing.Color.White;
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.ForeColor = System.Drawing.Color.Black;
@@ -399,7 +380,7 @@ namespace MFilesMDemo2.Forms
             // 
             this.iconButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton4.BackColor = System.Drawing.Color.White;
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.ForeColor = System.Drawing.Color.Black;
@@ -418,7 +399,7 @@ namespace MFilesMDemo2.Forms
             // 
             this.iconButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton5.BackColor = System.Drawing.Color.White;
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton5.ForeColor = System.Drawing.Color.Black;
@@ -435,6 +416,7 @@ namespace MFilesMDemo2.Forms
             // 
             // uiTableLayoutPanel1
             // 
+            this.uiTableLayoutPanel1.AutoScroll = true;
             this.uiTableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.uiTableLayoutPanel1.ColumnCount = 7;
             this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
@@ -444,8 +426,8 @@ namespace MFilesMDemo2.Forms
             this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
             this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.uiTableLayoutPanel1.Controls.Add(this.iconButton1, 0, 0);
             this.uiTableLayoutPanel1.Controls.Add(this.iconButton2, 0, 0);
-            this.uiTableLayoutPanel1.Controls.Add(this.iconButton1, 1, 0);
             this.uiTableLayoutPanel1.Controls.Add(this.iconButton3, 2, 0);
             this.uiTableLayoutPanel1.Controls.Add(this.iconButton4, 3, 0);
             this.uiTableLayoutPanel1.Controls.Add(this.iconButton5, 4, 0);
@@ -458,6 +440,25 @@ namespace MFilesMDemo2.Forms
             this.uiTableLayoutPanel1.Size = new System.Drawing.Size(800, 42);
             this.uiTableLayoutPanel1.TabIndex = 10;
             this.uiTableLayoutPanel1.TagString = null;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Black;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(130, 9);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(77, 24);
+            this.iconButton1.TabIndex = 18;
+            this.iconButton1.Text = "日常办公";
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // searchBox1
             // 
@@ -481,6 +482,7 @@ namespace MFilesMDemo2.Forms
             this.Controls.Add(this.panel1);
             this.Name = "FormHome";
             this.Text = "FormHome";
+            this.Load += new System.EventHandler(this.FromHome_Load);
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             this.uiTableLayoutPanel1.ResumeLayout(false);
@@ -492,7 +494,6 @@ namespace MFilesMDemo2.Forms
         private MFilesMDemo1.MyUserControl.AppButton appButton2;
         private FlowLayoutPanel panelDesktop;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private Panel panel1;
         private FontAwesome.Sharp.IconButton iconButton4;
@@ -513,8 +514,9 @@ namespace MFilesMDemo2.Forms
         private Button button14;
         private Button button15;
         private Button button16;
-        private Button button17;
+        private Button btnAddApp;
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel1;
         private MFilesMDemo1.MyUserControl.SearchBox searchBox1;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

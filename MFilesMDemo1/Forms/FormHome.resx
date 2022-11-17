@@ -12786,7 +12786,7 @@
         YII=
 </value>
   </data>
-  <data name="button17.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAddApp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAqVJREFUaEPt
         mL1u2zAUhb1ZKJBO3SMDtl4hgKQha+NkyBOkQOcMfYJkSpeuHjsEBYKiQF8ik2HkGZIpb5BduUc+lCla

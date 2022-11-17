@@ -7,8 +7,8 @@ using MFilesMDemo1.Theme;
 
 namespace MFilesMDemo1
 {
-    public partial class Form1 : Form
-    {
+    public partial class MainForm : Form
+    { 
 
         //Fields
         private IconButton currentBtn;
@@ -16,7 +16,7 @@ namespace MFilesMDemo1
         private Form currentChildForm;
 
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             //leftBorderBtn = new Panel();
@@ -151,7 +151,7 @@ namespace MFilesMDemo1
                 panelSidebar.Width = panelSidebar.MinimumSize.Width;
             else
                 panelSidebar.Width = panelSidebar.MaximumSize.Width;
-            
+
         }
 
     }

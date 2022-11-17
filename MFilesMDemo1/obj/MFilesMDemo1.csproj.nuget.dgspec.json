@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\UI\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj": {}
+    "D:\\Git\\UI2\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj": {}
   },
   "projects": {
-    "D:\\Git\\UI\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj": {
+    "D:\\Git\\UI2\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\UI\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj",
+        "projectUniqueName": "D:\\Git\\UI2\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj",
         "projectName": "MFilesMDemo1",
-        "projectPath": "D:\\Git\\UI\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj",
+        "projectPath": "D:\\Git\\UI2\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\UI\\MFilesMDemo1\\MFilesMDemo1\\obj\\",
+        "outputPath": "D:\\Git\\UI2\\MFilesMDemo1\\MFilesMDemo1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

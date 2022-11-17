@@ -1,7 +1,7 @@
 ﻿using MFilesMDemo1.Theme;
 namespace MFilesMDemo1
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,8 +28,8 @@ namespace MFilesMDemo1
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
-        { 
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnMenu = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.btnFiles = new FontAwesome.Sharp.IconButton();
@@ -50,6 +50,7 @@ namespace MFilesMDemo1
             this.uiTableLayoutPanel2 = new Sunny.UI.UITableLayoutPanel();
             this.panelSidebar = new Sunny.UI.UIPanel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.panelTitle.SuspendLayout();
             this.uiTableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,9 +77,9 @@ namespace MFilesMDemo1
             this.btnMenu.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnMenu.Size = new System.Drawing.Size(100, 40);
+            this.btnMenu.Size = new System.Drawing.Size(120, 40);
             this.btnMenu.TabIndex = 6;
-            this.btnMenu.Text = "   菜单";
+            this.btnMenu.Text = "   主菜单";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu.UseVisualStyleBackColor = false;
@@ -95,13 +96,13 @@ namespace MFilesMDemo1
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 24;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 43);
+            this.btnHome.Location = new System.Drawing.Point(0, 83);
             this.btnHome.Margin = new System.Windows.Forms.Padding(0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(100, 40);
+            this.btnHome.Size = new System.Drawing.Size(120, 40);
             this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "         主页";
+            this.btnHome.Text = "         我的应用";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -117,13 +118,13 @@ namespace MFilesMDemo1
             this.btnFiles.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnFiles.IconSize = 24;
             this.btnFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiles.Location = new System.Drawing.Point(0, 83);
+            this.btnFiles.Location = new System.Drawing.Point(0, 123);
             this.btnFiles.Margin = new System.Windows.Forms.Padding(0);
             this.btnFiles.Name = "btnFiles";
             this.btnFiles.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnFiles.Size = new System.Drawing.Size(100, 40);
+            this.btnFiles.Size = new System.Drawing.Size(120, 40);
             this.btnFiles.TabIndex = 1;
-            this.btnFiles.Text = "         文件";
+            this.btnFiles.Text = "         文件管理";
             this.btnFiles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiles.UseVisualStyleBackColor = true;
             this.btnFiles.Click += new System.EventHandler(this.btnFiles_Click);
@@ -139,13 +140,13 @@ namespace MFilesMDemo1
             this.btnTask.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTask.IconSize = 24;
             this.btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTask.Location = new System.Drawing.Point(0, 123);
+            this.btnTask.Location = new System.Drawing.Point(0, 163);
             this.btnTask.Margin = new System.Windows.Forms.Padding(0);
             this.btnTask.Name = "btnTask";
             this.btnTask.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnTask.Size = new System.Drawing.Size(100, 40);
+            this.btnTask.Size = new System.Drawing.Size(120, 40);
             this.btnTask.TabIndex = 2;
-            this.btnTask.Text = "         任务";
+            this.btnTask.Text = "         任务管理";
             this.btnTask.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTask.UseVisualStyleBackColor = true;
             this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
@@ -161,13 +162,13 @@ namespace MFilesMDemo1
             this.btnDev.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDev.IconSize = 24;
             this.btnDev.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDev.Location = new System.Drawing.Point(0, 163);
+            this.btnDev.Location = new System.Drawing.Point(0, 203);
             this.btnDev.Margin = new System.Windows.Forms.Padding(0);
             this.btnDev.Name = "btnDev";
             this.btnDev.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnDev.Size = new System.Drawing.Size(100, 40);
+            this.btnDev.Size = new System.Drawing.Size(120, 40);
             this.btnDev.TabIndex = 3;
-            this.btnDev.Text = "         设备";
+            this.btnDev.Text = "         设备管理";
             this.btnDev.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDev.UseVisualStyleBackColor = true;
             this.btnDev.Click += new System.EventHandler(this.btnDev_Click);
@@ -186,10 +187,10 @@ namespace MFilesMDemo1
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.Gainsboro;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(42, 70);
+            this.panelDesktop.Location = new System.Drawing.Point(120, 70);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Padding = new System.Windows.Forms.Padding(1, 1, 0, 0);
-            this.panelDesktop.Size = new System.Drawing.Size(1002, 613);
+            this.panelDesktop.Size = new System.Drawing.Size(924, 613);
             this.panelDesktop.TabIndex = 4;
             // 
             // panelTitle
@@ -349,6 +350,7 @@ namespace MFilesMDemo1
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.panelSidebar.Controls.Add(this.iconButton3);
             this.panelSidebar.Controls.Add(this.iconButton2);
             this.panelSidebar.Controls.Add(this.btnHome);
             this.panelSidebar.Controls.Add(this.btnMenu);
@@ -361,12 +363,12 @@ namespace MFilesMDemo1
             this.panelSidebar.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panelSidebar.Location = new System.Drawing.Point(0, 70);
             this.panelSidebar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panelSidebar.MaximumSize = new System.Drawing.Size(100, 2000);
+            this.panelSidebar.MaximumSize = new System.Drawing.Size(120, 2000);
             this.panelSidebar.MinimumSize = new System.Drawing.Size(42, 613);
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.panelSidebar.RectDisableColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.panelSidebar.Size = new System.Drawing.Size(42, 613);
+            this.panelSidebar.Size = new System.Drawing.Size(120, 613);
             this.panelSidebar.Style = Sunny.UI.UIStyle.Custom;
             this.panelSidebar.TabIndex = 6;
             this.panelSidebar.Text = null;
@@ -389,13 +391,34 @@ namespace MFilesMDemo1
             this.iconButton2.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(42, 40);
+            this.iconButton2.Size = new System.Drawing.Size(120, 40);
             this.iconButton2.TabIndex = 7;
-            this.iconButton2.Text = "         设置";
+            this.iconButton2.Text = "         系统设置";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // iconButton3
+            // 
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconButton3.ForeColor = System.Drawing.Color.Black;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.TabletAlt;
+            this.iconButton3.IconColor = System.Drawing.Color.DimGray;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 24;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(0, 43);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.iconButton3.Size = new System.Drawing.Size(120, 40);
+            this.iconButton3.TabIndex = 8;
+            this.iconButton3.Text = "         最近访问";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1044, 683);
@@ -405,7 +428,7 @@ namespace MFilesMDemo1
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.iconButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.panelTitle.ResumeLayout(false);
             this.uiTableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -439,5 +462,6 @@ namespace MFilesMDemo1
         private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel2;
         private Sunny.UI.UIPanel panelSidebar;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
     }
 }

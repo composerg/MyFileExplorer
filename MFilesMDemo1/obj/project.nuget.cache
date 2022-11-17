@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oxxQUhtFtukXJQ9z6D75NBQ2xqOtogO9J5PBgrfOrzFQlcskv076L64fzgP/WmwlCwGvzxNbzuNWFE+2dIZ09w==",
+  "dgSpecHash": "pv4cTrqv4aBBwEi90NGZMS7o3ua8iC+uUM48E5o8C0UqOGsosS14iYuI/Q/KM7ZOSz9y/CQVVT+bmM52ie/qgg==",
   "success": true,
-  "projectFilePath": "D:\\Git\\UI\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj",
+  "projectFilePath": "D:\\Git\\UI2\\MFilesMDemo1\\MFilesMDemo1\\MFilesMDemo1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\ardalis.guardclauses\\1.4.2\\ardalis.guardclauses.1.4.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
