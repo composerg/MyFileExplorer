@@ -71,10 +71,6 @@ D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\bin\Debug\net6.0-windows\SunnyUI.dll
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\bin\Debug\net6.0-windows\SunnyUI.Common.dll
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\bin\Debug\net6.0-windows\XMindAPI.dll
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.csproj.AssemblyReference.cache
-D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo2.Forms.FormDevice.resources
-D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo2.Forms.FormFiles.resources
-D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo2.Forms.FormHome.resources
-D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo2.Forms.FormTask.resources
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.MainForm.resources
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.MyUserControl.AppButton.resources
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.MyUserControl.SearchBox.resources
@@ -90,4 +86,8 @@ D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\refint\MFilesMDemo
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.pdb
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.genruntimeconfig.cache
 D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\ref\MFilesMDemo1.dll
-D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.Forms.FormRelate.resources
+D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.Forms.FormRecent.resources
+D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.Forms.FormDevice.resources
+D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.Forms.FormFiles.resources
+D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.Forms.FormHome.resources
+D:\Git\UI2\MFilesMDemo1\MFilesMDemo1\obj\Debug\net6.0-windows\MFilesMDemo1.Forms.FormTask.resources

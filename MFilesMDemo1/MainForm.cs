@@ -1,14 +1,14 @@
 
-
+using Sunny.UI;
 using FontAwesome.Sharp;
-using MFilesMDemo2.Forms;
+using MFilesMDemo1.Forms;
 using System.Runtime.InteropServices;
 using MFilesMDemo1.Theme;
 
 namespace MFilesMDemo1
 {
-    public partial class MainForm : Form
-    { 
+    public partial class MainForm : UIForm
+    {
 
         //Fields
         private IconButton currentBtn;
@@ -26,6 +26,7 @@ namespace MFilesMDemo1
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+            OpenChildForm(new FormRecent());
         }
 
 
@@ -147,12 +148,21 @@ namespace MFilesMDemo1
         private void btnMenu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color8);
-            if (panelSidebar.Width == panelSidebar.MaximumSize.Width)
+            if (panelSidebar.Width == panelSidebar.MaximumSize.Width) { 
                 panelSidebar.Width = panelSidebar.MinimumSize.Width;
-            else
+                btnSetting.Text = "";
+            }
+            else{
                 panelSidebar.Width = panelSidebar.MaximumSize.Width;
+                btnSetting.Text = "   œµÕ≥…Ë÷√";
+            }
 
         }
 
+        private void btnRecent_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color8);
+            OpenChildForm(new FormRecent());
+        }
     }
 }

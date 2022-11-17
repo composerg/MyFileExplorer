@@ -1,6 +1,6 @@
 ﻿using MFilesMDemo1.Theme;
 
-namespace MFilesMDemo2.Forms
+namespace MFilesMDemo1.Forms
 {
     partial class FormHome
     {
@@ -49,16 +49,18 @@ namespace MFilesMDemo2.Forms
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.btnAddApp = new System.Windows.Forms.Button();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.uiTableLayoutPanel1 = new Sunny.UI.UITableLayoutPanel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.searchBox1 = new MFilesMDemo1.MyUserControl.SearchBox();
+            this.Category1 = new FontAwesome.Sharp.IconButton();
+            this.Category3 = new FontAwesome.Sharp.IconButton();
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.Category4 = new FontAwesome.Sharp.IconButton();
+            this.Category5 = new FontAwesome.Sharp.IconButton();
+            this.panelFunction = new Sunny.UI.UITableLayoutPanel();
+            this.Category2 = new FontAwesome.Sharp.IconButton();
+            this.SearchBox = new MFilesMDemo1.MyUserControl.SearchBox();
+            this.panelBottomOfDesktop = new System.Windows.Forms.Panel();
             this.panelDesktop.SuspendLayout();
-            this.uiTableLayoutPanel1.SuspendLayout();
+            this.panelFunction.SuspendLayout();
+            this.panelBottomOfDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDesktop
@@ -83,10 +85,10 @@ namespace MFilesMDemo2.Forms
             this.panelDesktop.Controls.Add(this.button16);
             this.panelDesktop.Controls.Add(this.btnAddApp);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 42);
+            this.panelDesktop.Location = new System.Drawing.Point(0, 1);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Padding = new System.Windows.Forms.Padding(15, 15, 0, 0);
-            this.panelDesktop.Size = new System.Drawing.Size(800, 385);
+            this.panelDesktop.Padding = new System.Windows.Forms.Padding(15, 15, 15, 0);
+            this.panelDesktop.Size = new System.Drawing.Size(800, 384);
             this.panelDesktop.TabIndex = 9;
             // 
             // button1
@@ -329,163 +331,175 @@ namespace MFilesMDemo2.Forms
             this.btnAddApp.TabIndex = 26;
             this.btnAddApp.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // Category1
             // 
-            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Category1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Black;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(25, 9);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(77, 24);
-            this.iconButton2.TabIndex = 10;
-            this.iconButton2.Text = "全部类型";
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.Category1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.Category1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.Category1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Category1.ForeColor = System.Drawing.Color.Black;
+            this.Category1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Category1.IconColor = System.Drawing.Color.Black;
+            this.Category1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Category1.Location = new System.Drawing.Point(25, 9);
+            this.Category1.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
+            this.Category1.Name = "Category1";
+            this.Category1.Size = new System.Drawing.Size(77, 24);
+            this.Category1.TabIndex = 10;
+            this.Category1.Text = "全部类型";
+            this.Category1.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // Category3
             // 
-            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Category3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.Black;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(235, 9);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(77, 24);
-            this.iconButton3.TabIndex = 12;
-            this.iconButton3.Text = "专业应用";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.Category3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.Category3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.Category3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Category3.ForeColor = System.Drawing.Color.Black;
+            this.Category3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Category3.IconColor = System.Drawing.Color.Black;
+            this.Category3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Category3.Location = new System.Drawing.Point(235, 9);
+            this.Category3.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
+            this.Category3.Name = "Category3";
+            this.Category3.Size = new System.Drawing.Size(77, 24);
+            this.Category3.TabIndex = 12;
+            this.Category3.Text = "专业应用";
+            this.Category3.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // panelBottom
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 427);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 23);
-            this.panel1.TabIndex = 1;
+            this.panelBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 427);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(800, 23);
+            this.panelBottom.TabIndex = 1;
             // 
-            // iconButton4
+            // Category4
             // 
-            this.iconButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Category4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.Black;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(340, 9);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(77, 24);
-            this.iconButton4.TabIndex = 13;
-            this.iconButton4.Text = "行业专用";
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.Category4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.Category4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.Category4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Category4.ForeColor = System.Drawing.Color.Black;
+            this.Category4.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Category4.IconColor = System.Drawing.Color.Black;
+            this.Category4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Category4.Location = new System.Drawing.Point(340, 9);
+            this.Category4.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
+            this.Category4.Name = "Category4";
+            this.Category4.Size = new System.Drawing.Size(77, 24);
+            this.Category4.TabIndex = 13;
+            this.Category4.Text = "行业专用";
+            this.Category4.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
+            // Category5
             // 
-            this.iconButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Category5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.Black;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(445, 9);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(77, 24);
-            this.iconButton5.TabIndex = 14;
-            this.iconButton5.Text = "娱乐休闲";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.Category5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.Category5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.Category5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Category5.ForeColor = System.Drawing.Color.Black;
+            this.Category5.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Category5.IconColor = System.Drawing.Color.Black;
+            this.Category5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Category5.Location = new System.Drawing.Point(445, 9);
+            this.Category5.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
+            this.Category5.Name = "Category5";
+            this.Category5.Size = new System.Drawing.Size(77, 24);
+            this.Category5.TabIndex = 14;
+            this.Category5.Text = "娱乐休闲";
+            this.Category5.UseVisualStyleBackColor = false;
             // 
-            // uiTableLayoutPanel1
+            // panelFunction
             // 
-            this.uiTableLayoutPanel1.AutoScroll = true;
-            this.uiTableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.uiTableLayoutPanel1.ColumnCount = 7;
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.uiTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.uiTableLayoutPanel1.Controls.Add(this.iconButton1, 0, 0);
-            this.uiTableLayoutPanel1.Controls.Add(this.iconButton2, 0, 0);
-            this.uiTableLayoutPanel1.Controls.Add(this.iconButton3, 2, 0);
-            this.uiTableLayoutPanel1.Controls.Add(this.iconButton4, 3, 0);
-            this.uiTableLayoutPanel1.Controls.Add(this.iconButton5, 4, 0);
-            this.uiTableLayoutPanel1.Controls.Add(this.searchBox1, 6, 0);
-            this.uiTableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uiTableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.uiTableLayoutPanel1.Name = "uiTableLayoutPanel1";
-            this.uiTableLayoutPanel1.RowCount = 1;
-            this.uiTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.uiTableLayoutPanel1.Size = new System.Drawing.Size(800, 42);
-            this.uiTableLayoutPanel1.TabIndex = 10;
-            this.uiTableLayoutPanel1.TagString = null;
+            this.panelFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.panelFunction.ColumnCount = 7;
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.panelFunction.Controls.Add(this.Category2, 0, 0);
+            this.panelFunction.Controls.Add(this.Category1, 0, 0);
+            this.panelFunction.Controls.Add(this.Category3, 2, 0);
+            this.panelFunction.Controls.Add(this.Category4, 3, 0);
+            this.panelFunction.Controls.Add(this.Category5, 4, 0);
+            this.panelFunction.Controls.Add(this.SearchBox, 6, 0);
+            this.panelFunction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelFunction.Location = new System.Drawing.Point(0, 0);
+            this.panelFunction.Name = "panelFunction";
+            this.panelFunction.RowCount = 1;
+            this.panelFunction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.panelFunction.Size = new System.Drawing.Size(800, 42);
+            this.panelFunction.TabIndex = 10;
+            this.panelFunction.TagString = null;
             // 
-            // iconButton1
+            // Category2
             // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Category2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Black;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(130, 9);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(77, 24);
-            this.iconButton1.TabIndex = 18;
-            this.iconButton1.Text = "日常办公";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.Category2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.Category2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.Category2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Category2.ForeColor = System.Drawing.Color.Black;
+            this.Category2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Category2.IconColor = System.Drawing.Color.Black;
+            this.Category2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Category2.Location = new System.Drawing.Point(130, 9);
+            this.Category2.Margin = new System.Windows.Forms.Padding(25, 9, 3, 9);
+            this.Category2.Name = "Category2";
+            this.Category2.Size = new System.Drawing.Size(77, 24);
+            this.Category2.TabIndex = 18;
+            this.Category2.Text = "日常办公";
+            this.Category2.UseVisualStyleBackColor = false;
             // 
-            // searchBox1
+            // SearchBox
             // 
-            this.searchBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.searchBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBox1.Location = new System.Drawing.Point(642, 9);
-            this.searchBox1.Margin = new System.Windows.Forms.Padding(3, 9, 10, 9);
-            this.searchBox1.Name = "searchBox1";
-            this.searchBox1.Size = new System.Drawing.Size(148, 24);
-            this.searchBox1.TabIndex = 17;
+            this.SearchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.SearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SearchBox.Location = new System.Drawing.Point(642, 9);
+            this.SearchBox.Margin = new System.Windows.Forms.Padding(3, 9, 25, 9);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(133, 24);
+            this.SearchBox.TabIndex = 17;
+            // 
+            // panelBottomOfDesktop
+            // 
+            this.panelBottomOfDesktop.BackColor = System.Drawing.Color.Gainsboro;
+            this.panelBottomOfDesktop.Controls.Add(this.panelDesktop);
+            this.panelBottomOfDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBottomOfDesktop.Location = new System.Drawing.Point(0, 42);
+            this.panelBottomOfDesktop.Margin = new System.Windows.Forms.Padding(0);
+            this.panelBottomOfDesktop.Name = "panelBottomOfDesktop";
+            this.panelBottomOfDesktop.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.panelBottomOfDesktop.Size = new System.Drawing.Size(800, 385);
+            this.panelBottomOfDesktop.TabIndex = 11;
             // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelDesktop);
-            this.Controls.Add(this.uiTableLayoutPanel1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBottomOfDesktop);
+            this.Controls.Add(this.panelFunction);
+            this.Controls.Add(this.panelBottom);
             this.Name = "FormHome";
             this.Text = "FormHome";
             this.Load += new System.EventHandler(this.FromHome_Load);
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
-            this.uiTableLayoutPanel1.ResumeLayout(false);
+            this.panelFunction.ResumeLayout(false);
+            this.panelBottomOfDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -493,11 +507,11 @@ namespace MFilesMDemo2.Forms
         #endregion
         private MFilesMDemo1.MyUserControl.AppButton appButton2;
         private FlowLayoutPanel panelDesktop;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private Panel panel1;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton Category1;
+        private FontAwesome.Sharp.IconButton Category3;
+        private Panel panelBottom;
+        private FontAwesome.Sharp.IconButton Category4;
+        private FontAwesome.Sharp.IconButton Category5;
         private Button button1;
         private Button button9;
         private Button button7;
@@ -515,8 +529,9 @@ namespace MFilesMDemo2.Forms
         private Button button15;
         private Button button16;
         private Button btnAddApp;
-        private Sunny.UI.UITableLayoutPanel uiTableLayoutPanel1;
-        private MFilesMDemo1.MyUserControl.SearchBox searchBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private Sunny.UI.UITableLayoutPanel panelFunction;
+        private MFilesMDemo1.MyUserControl.SearchBox SearchBox;
+        private FontAwesome.Sharp.IconButton Category2;
+        private Panel panelBottomOfDesktop;
     }
 }

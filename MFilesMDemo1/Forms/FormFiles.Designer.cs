@@ -1,7 +1,7 @@
 ﻿using MFilesMDemo1;
 using MFilesMDemo1.Properties;
 using MFilesMDemo1.Theme;
-namespace MFilesMDemo2.Forms
+namespace MFilesMDemo1.Forms
 {
     partial class FormFiles
     {
@@ -33,9 +33,13 @@ namespace MFilesMDemo2.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFiles));
-            this.uiSplitContainer1 = new Sunny.UI.UISplitContainer();
+            this.uiSplitContainer = new Sunny.UI.UISplitContainer();
             this.tvwDirectory = new System.Windows.Forms.TreeView();
             this.lvwFiles = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.RightClickContextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
             this.剪切ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.文件夹ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,15 +47,11 @@ namespace MFilesMDemo2.Forms
             this.LargeImage = new System.Windows.Forms.ImageList(this.components);
             this.SmallImage = new System.Windows.Forms.ImageList(this.components);
             this.btnBack = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnForward = new FontAwesome.Sharp.IconButton();
+            this.btnUp = new FontAwesome.Sharp.IconButton();
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
             this.panelFunction = new System.Windows.Forms.TableLayoutPanel();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.searchBox1 = new MFilesMDemo1.MyUserControl.SearchBox();
             this.btnView = new FontAwesome.Sharp.IconButton();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.ViewContextMenuStrip = new Sunny.UI.UIContextMenuStrip();
@@ -60,47 +60,45 @@ namespace MFilesMDemo2.Forms
             this.列表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.详细信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MediumImage = new System.Windows.Forms.ImageList(this.components);
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.uiSplitContainer1)).BeginInit();
-            this.uiSplitContainer1.Panel1.SuspendLayout();
-            this.uiSplitContainer1.Panel2.SuspendLayout();
-            this.uiSplitContainer1.SuspendLayout();
+            this.panelBottomOfDeaktop = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.uiSplitContainer)).BeginInit();
+            this.uiSplitContainer.Panel1.SuspendLayout();
+            this.uiSplitContainer.Panel2.SuspendLayout();
+            this.uiSplitContainer.SuspendLayout();
             this.RightClickContextMenuStrip1.SuspendLayout();
             this.panelFunction.SuspendLayout();
             this.ViewContextMenuStrip.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelBottomOfDeaktop.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
-            // uiSplitContainer1
+            // uiSplitContainer
             // 
-            this.uiSplitContainer1.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.uiSplitContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.uiSplitContainer1.BarColor = System.Drawing.Color.WhiteSmoke;
-            this.uiSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSplitContainer1.HandleColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.uiSplitContainer1.HandleHoverColor = System.Drawing.Color.IndianRed;
-            this.uiSplitContainer1.Location = new System.Drawing.Point(0, 1);
-            this.uiSplitContainer1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.uiSplitContainer1.Name = "uiSplitContainer1";
+            this.uiSplitContainer.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.uiSplitContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.uiSplitContainer.BarColor = System.Drawing.Color.WhiteSmoke;
+            this.uiSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiSplitContainer.HandleColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.uiSplitContainer.HandleHoverColor = System.Drawing.Color.IndianRed;
+            this.uiSplitContainer.Location = new System.Drawing.Point(25, 15);
+            this.uiSplitContainer.MinimumSize = new System.Drawing.Size(20, 20);
+            this.uiSplitContainer.Name = "uiSplitContainer";
             // 
-            // uiSplitContainer1.Panel1
+            // uiSplitContainer.Panel1
             // 
-            this.uiSplitContainer1.Panel1.Controls.Add(this.tvwDirectory);
+            this.uiSplitContainer.Panel1.Controls.Add(this.tvwDirectory);
             // 
-            // uiSplitContainer1.Panel2
+            // uiSplitContainer.Panel2
             // 
-            this.uiSplitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.uiSplitContainer1.Panel2.Controls.Add(this.lvwFiles);
-            this.uiSplitContainer1.Size = new System.Drawing.Size(800, 383);
-            this.uiSplitContainer1.SplitterDistance = 268;
-            this.uiSplitContainer1.SplitterWidth = 11;
-            this.uiSplitContainer1.Style = Sunny.UI.UIStyle.Gray;
-            this.uiSplitContainer1.TabIndex = 1;
-            this.uiSplitContainer1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiSplitContainer.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.uiSplitContainer.Panel2.Controls.Add(this.lvwFiles);
+            this.uiSplitContainer.Size = new System.Drawing.Size(775, 343);
+            this.uiSplitContainer.SplitterDistance = 258;
+            this.uiSplitContainer.SplitterWidth = 11;
+            this.uiSplitContainer.Style = Sunny.UI.UIStyle.Gray;
+            this.uiSplitContainer.TabIndex = 1;
+            this.uiSplitContainer.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // tvwDirectory
             // 
@@ -109,7 +107,7 @@ namespace MFilesMDemo2.Forms
             this.tvwDirectory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvwDirectory.Location = new System.Drawing.Point(0, 0);
             this.tvwDirectory.Name = "tvwDirectory";
-            this.tvwDirectory.Size = new System.Drawing.Size(268, 383);
+            this.tvwDirectory.Size = new System.Drawing.Size(258, 343);
             this.tvwDirectory.TabIndex = 0;
             this.tvwDirectory.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tvwDirectory_NodeMouseClick);
             // 
@@ -117,17 +115,41 @@ namespace MFilesMDemo2.Forms
             // 
             this.lvwFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.lvwFiles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvwFiles.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.lvwFiles.ContextMenuStrip = this.RightClickContextMenuStrip1;
             this.lvwFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwFiles.LargeImageList = this.LargeImage;
             this.lvwFiles.Location = new System.Drawing.Point(0, 0);
             this.lvwFiles.Name = "lvwFiles";
-            this.lvwFiles.Size = new System.Drawing.Size(521, 383);
+            this.lvwFiles.Size = new System.Drawing.Size(506, 343);
             this.lvwFiles.SmallImageList = this.SmallImage;
             this.lvwFiles.StateImageList = this.SmallImage;
             this.lvwFiles.TabIndex = 0;
             this.lvwFiles.UseCompatibleStateImageBehavior = false;
             this.lvwFiles.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "名称";
+            this.columnHeader1.Width = 200;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "修改日期";
+            this.columnHeader2.Width = 150;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "类型";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "大小";
+            this.columnHeader4.Width = 50;
             // 
             // RightClickContextMenuStrip1
             // 
@@ -186,94 +208,84 @@ namespace MFilesMDemo2.Forms
             this.btnBack.IconColor = System.Drawing.Color.Black;
             this.btnBack.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBack.IconSize = 18;
-            this.btnBack.Location = new System.Drawing.Point(15, 9);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(15, 9, 12, 9);
+            this.btnBack.Location = new System.Drawing.Point(25, 9);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(25, 9, 12, 9);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(24, 24);
             this.btnBack.TabIndex = 11;
             this.btnBack.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnBack.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
+            // btnForward
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 18;
-            this.iconButton1.Location = new System.Drawing.Point(51, 9);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(24, 24);
-            this.iconButton1.TabIndex = 12;
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnForward.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnForward.FlatAppearance.BorderSize = 0;
+            this.btnForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForward.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnForward.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
+            this.btnForward.IconColor = System.Drawing.Color.Black;
+            this.btnForward.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnForward.IconSize = 18;
+            this.btnForward.Location = new System.Drawing.Point(61, 9);
+            this.btnForward.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
+            this.btnForward.Name = "btnForward";
+            this.btnForward.Size = new System.Drawing.Size(24, 24);
+            this.btnForward.TabIndex = 12;
+            this.btnForward.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnForward.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btnUp
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 18;
-            this.iconButton2.Location = new System.Drawing.Point(87, 9);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(24, 24);
-            this.iconButton2.TabIndex = 13;
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.btnUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnUp.FlatAppearance.BorderSize = 0;
+            this.btnUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUp.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnUp.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
+            this.btnUp.IconColor = System.Drawing.Color.Black;
+            this.btnUp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUp.IconSize = 18;
+            this.btnUp.Location = new System.Drawing.Point(97, 9);
+            this.btnUp.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Size = new System.Drawing.Size(24, 24);
+            this.btnUp.TabIndex = 13;
+            this.btnUp.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnUp.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // btnRefresh
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Rotate;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 18;
-            this.iconButton3.Location = new System.Drawing.Point(123, 9);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(24, 24);
-            this.iconButton3.TabIndex = 14;
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Rotate;
+            this.btnRefresh.IconColor = System.Drawing.Color.Black;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRefresh.IconSize = 18;
+            this.btnRefresh.Location = new System.Drawing.Point(133, 9);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(24, 24);
+            this.btnRefresh.TabIndex = 14;
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // panelFunction
             // 
             this.panelFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.panelFunction.ColumnCount = 12;
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.panelFunction.ColumnCount = 6;
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.panelFunction.Controls.Add(this.btnBack, 0, 0);
-            this.panelFunction.Controls.Add(this.iconButton3, 3, 0);
-            this.panelFunction.Controls.Add(this.iconButton1, 1, 0);
-            this.panelFunction.Controls.Add(this.iconButton2, 2, 0);
-            this.panelFunction.Controls.Add(this.iconButton8, 9, 0);
-            this.panelFunction.Controls.Add(this.iconButton5, 7, 0);
-            this.panelFunction.Controls.Add(this.iconButton7, 8, 0);
-            this.panelFunction.Controls.Add(this.iconButton9, 5, 0);
-            this.panelFunction.Controls.Add(this.iconButton6, 6, 0);
-            this.panelFunction.Controls.Add(this.btnView, 11, 0);
+            this.panelFunction.Controls.Add(this.btnRefresh, 3, 0);
+            this.panelFunction.Controls.Add(this.btnForward, 1, 0);
+            this.panelFunction.Controls.Add(this.btnUp, 2, 0);
+            this.panelFunction.Controls.Add(this.searchBox1, 5, 0);
+            this.panelFunction.Controls.Add(this.btnView, 4, 0);
             this.panelFunction.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFunction.Location = new System.Drawing.Point(0, 0);
             this.panelFunction.Margin = new System.Windows.Forms.Padding(0);
@@ -283,100 +295,22 @@ namespace MFilesMDemo2.Forms
             this.panelFunction.Size = new System.Drawing.Size(800, 42);
             this.panelFunction.TabIndex = 16;
             // 
-            // iconButton8
+            // searchBox1
             // 
-            this.iconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 18;
-            this.iconButton8.Location = new System.Drawing.Point(383, 9);
-            this.iconButton8.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Size = new System.Drawing.Size(24, 24);
-            this.iconButton8.TabIndex = 20;
-            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton8.UseVisualStyleBackColor = false;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.StickyNote;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 18;
-            this.iconButton5.Location = new System.Drawing.Point(311, 9);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(24, 24);
-            this.iconButton5.TabIndex = 18;
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Repeat;
-            this.iconButton7.IconColor = System.Drawing.Color.Black;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 18;
-            this.iconButton7.Location = new System.Drawing.Point(347, 9);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(24, 24);
-            this.iconButton7.TabIndex = 19;
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton7.UseVisualStyleBackColor = false;
-            // 
-            // iconButton9
-            // 
-            this.iconButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Scissors;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 18;
-            this.iconButton9.Location = new System.Drawing.Point(239, 9);
-            this.iconButton9.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(24, 24);
-            this.iconButton9.TabIndex = 21;
-            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton9.UseVisualStyleBackColor = false;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Copy;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 18;
-            this.iconButton6.Location = new System.Drawing.Point(275, 9);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(0, 9, 12, 9);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(24, 24);
-            this.iconButton6.TabIndex = 17;
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.iconButton6.UseVisualStyleBackColor = false;
+            this.searchBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.searchBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchBox1.Location = new System.Drawing.Point(642, 9);
+            this.searchBox1.Margin = new System.Windows.Forms.Padding(3, 9, 25, 9);
+            this.searchBox1.Name = "searchBox1";
+            this.searchBox1.Size = new System.Drawing.Size(133, 24);
+            this.searchBox1.TabIndex = 23;
             // 
             // btnView
             // 
             this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.btnView.BackColor = System.Drawing.Color.White;
             this.btnView.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -384,10 +318,10 @@ namespace MFilesMDemo2.Forms
             this.btnView.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnView.IconColor = System.Drawing.Color.Black;
             this.btnView.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnView.Location = new System.Drawing.Point(703, 9);
+            this.btnView.Location = new System.Drawing.Point(169, 9);
             this.btnView.Margin = new System.Windows.Forms.Padding(0, 9, 20, 9);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(77, 24);
+            this.btnView.Size = new System.Drawing.Size(76, 24);
             this.btnView.TabIndex = 22;
             this.btnView.Text = "查看";
             this.btnView.UseVisualStyleBackColor = false;
@@ -452,37 +386,50 @@ namespace MFilesMDemo2.Forms
             this.MediumImage.TransparentColor = System.Drawing.Color.Transparent;
             this.MediumImage.Images.SetKeyName(0, "文件下载.png");
             // 
-            // panel1
+            // panelBottomOfDeaktop
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Controls.Add(this.uiSplitContainer1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 42);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.panel1.Size = new System.Drawing.Size(800, 385);
-            this.panel1.TabIndex = 19;
+            this.panelBottomOfDeaktop.BackColor = System.Drawing.Color.Gainsboro;
+            this.panelBottomOfDeaktop.Controls.Add(this.panelDesktop);
+            this.panelBottomOfDeaktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBottomOfDeaktop.Location = new System.Drawing.Point(0, 42);
+            this.panelBottomOfDeaktop.Margin = new System.Windows.Forms.Padding(0);
+            this.panelBottomOfDeaktop.Name = "panelBottomOfDeaktop";
+            this.panelBottomOfDeaktop.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.panelBottomOfDeaktop.Size = new System.Drawing.Size(800, 385);
+            this.panelBottomOfDeaktop.TabIndex = 19;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panelDesktop.Controls.Add(this.uiSplitContainer);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(0, 1);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(0);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Padding = new System.Windows.Forms.Padding(25, 15, 0, 25);
+            this.panelDesktop.Size = new System.Drawing.Size(800, 383);
+            this.panelDesktop.TabIndex = 2;
             // 
             // FormFiles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBottomOfDeaktop);
             this.Controls.Add(this.panelFunction);
             this.Controls.Add(this.panelBottom);
             this.Name = "FormFiles";
             this.Text = "FormFiles";
             this.Load += new System.EventHandler(this.FormFiles_Load);
-            this.uiSplitContainer1.Panel1.ResumeLayout(false);
-            this.uiSplitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiSplitContainer1)).EndInit();
-            this.uiSplitContainer1.ResumeLayout(false);
+            this.uiSplitContainer.Panel1.ResumeLayout(false);
+            this.uiSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiSplitContainer)).EndInit();
+            this.uiSplitContainer.ResumeLayout(false);
             this.RightClickContextMenuStrip1.ResumeLayout(false);
             this.panelFunction.ResumeLayout(false);
             this.ViewContextMenuStrip.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panelBottomOfDeaktop.ResumeLayout(false);
+            this.panelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -490,17 +437,12 @@ namespace MFilesMDemo2.Forms
         #endregion
 
 
-        private Sunny.UI.UISplitContainer uiSplitContainer1;
+        private Sunny.UI.UISplitContainer uiSplitContainer;
         private FontAwesome.Sharp.IconButton btnBack;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnForward;
+        private FontAwesome.Sharp.IconButton btnUp;
+        private FontAwesome.Sharp.IconButton btnRefresh;
         private TableLayoutPanel panelFunction;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton6;
         private Panel panelBottom;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -522,6 +464,8 @@ namespace MFilesMDemo2.Forms
         private ToolStripMenuItem 详细信息ToolStripMenuItem;
         private ImageList SmallImage;
         private ImageList MediumImage;
-        private Panel panel1;
+        private Panel panelBottomOfDeaktop;
+        private MyUserControl.SearchBox searchBox1;
+        private Panel panelDesktop;
     }
 }

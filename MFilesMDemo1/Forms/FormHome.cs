@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MFilesMDemo1.Theme;
 
-namespace MFilesMDemo2.Forms
+namespace MFilesMDemo1.Forms
 {
     public partial class FormHome : Form
     {

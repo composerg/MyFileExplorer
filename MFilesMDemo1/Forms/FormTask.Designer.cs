@@ -1,4 +1,4 @@
-﻿namespace MFilesMDemo2.Forms
+﻿namespace MFilesMDemo1.Forms
 {
     partial class FormTask
     {
@@ -33,9 +33,11 @@
             this.btnRefresh = new FontAwesome.Sharp.IconButton();
             this.btnFinish = new FontAwesome.Sharp.IconButton();
             this.panelFunction = new System.Windows.Forms.TableLayoutPanel();
+            this.SearchBox = new MFilesMDemo1.MyUserControl.SearchBox();
             this.lblCurProcessNum = new System.Windows.Forms.Label();
             this.txtCurProcessNum = new System.Windows.Forms.TextBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelBottonOfListView = new System.Windows.Forms.Panel();
             this.lvwProcess = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
@@ -47,12 +49,13 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panelFunction.SuspendLayout();
             this.panelDesktop.SuspendLayout();
+            this.panelBottonOfListView.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRefresh
             // 
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -60,7 +63,7 @@
             this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnRefresh.IconColor = System.Drawing.Color.Black;
             this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRefresh.Location = new System.Drawing.Point(616, 9);
+            this.btnRefresh.Location = new System.Drawing.Point(139, 9);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 9, 15, 9);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(69, 24);
@@ -79,7 +82,7 @@
             this.btnFinish.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFinish.IconColor = System.Drawing.Color.Black;
             this.btnFinish.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFinish.Location = new System.Drawing.Point(700, 9);
+            this.btnFinish.Location = new System.Drawing.Point(225, 9);
             this.btnFinish.Margin = new System.Windows.Forms.Padding(0, 9, 15, 9);
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.Size = new System.Drawing.Size(85, 24);
@@ -90,11 +93,13 @@
             // panelFunction
             // 
             this.panelFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.panelFunction.ColumnCount = 4;
+            this.panelFunction.ColumnCount = 5;
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.panelFunction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 475F));
+            this.panelFunction.Controls.Add(this.SearchBox, 4, 0);
             this.panelFunction.Controls.Add(this.btnFinish, 3, 0);
             this.panelFunction.Controls.Add(this.btnRefresh, 2, 0);
             this.panelFunction.Controls.Add(this.lblCurProcessNum, 0, 0);
@@ -107,13 +112,25 @@
             this.panelFunction.Size = new System.Drawing.Size(800, 42);
             this.panelFunction.TabIndex = 14;
             // 
+            // SearchBox
+            // 
+            this.SearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SearchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.SearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SearchBox.Location = new System.Drawing.Point(642, 9);
+            this.SearchBox.Margin = new System.Windows.Forms.Padding(3, 9, 25, 9);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(133, 24);
+            this.SearchBox.TabIndex = 18;
+            // 
             // lblCurProcessNum
             // 
             this.lblCurProcessNum.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblCurProcessNum.AutoSize = true;
-            this.lblCurProcessNum.Location = new System.Drawing.Point(15, 13);
-            this.lblCurProcessNum.Margin = new System.Windows.Forms.Padding(15, 13, 0, 13);
+            this.lblCurProcessNum.Location = new System.Drawing.Point(25, 13);
+            this.lblCurProcessNum.Margin = new System.Windows.Forms.Padding(25, 13, 0, 13);
             this.lblCurProcessNum.Name = "lblCurProcessNum";
             this.lblCurProcessNum.Size = new System.Drawing.Size(71, 16);
             this.lblCurProcessNum.TabIndex = 14;
@@ -123,16 +140,16 @@
             // 
             this.txtCurProcessNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.txtCurProcessNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCurProcessNum.Location = new System.Drawing.Point(86, 13);
+            this.txtCurProcessNum.Location = new System.Drawing.Point(99, 13);
             this.txtCurProcessNum.Margin = new System.Windows.Forms.Padding(0, 13, 0, 13);
             this.txtCurProcessNum.Name = "txtCurProcessNum";
-            this.txtCurProcessNum.Size = new System.Drawing.Size(45, 16);
+            this.txtCurProcessNum.Size = new System.Drawing.Size(40, 16);
             this.txtCurProcessNum.TabIndex = 15;
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.Gainsboro;
-            this.panelDesktop.Controls.Add(this.lvwProcess);
+            this.panelDesktop.Controls.Add(this.panelBottonOfListView);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(0, 42);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(0);
@@ -141,8 +158,21 @@
             this.panelDesktop.Size = new System.Drawing.Size(800, 408);
             this.panelDesktop.TabIndex = 15;
             // 
+            // panelBottonOfListView
+            // 
+            this.panelBottonOfListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panelBottonOfListView.Controls.Add(this.lvwProcess);
+            this.panelBottonOfListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBottonOfListView.Location = new System.Drawing.Point(0, 1);
+            this.panelBottonOfListView.Margin = new System.Windows.Forms.Padding(0);
+            this.panelBottonOfListView.Name = "panelBottonOfListView";
+            this.panelBottonOfListView.Padding = new System.Windows.Forms.Padding(25, 15, 25, 0);
+            this.panelBottonOfListView.Size = new System.Drawing.Size(800, 407);
+            this.panelBottonOfListView.TabIndex = 1;
+            // 
             // lvwProcess
             // 
+            this.lvwProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.lvwProcess.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvwProcess.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
@@ -155,9 +185,9 @@
             this.lvwProcess.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwProcess.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvwProcess.FullRowSelect = true;
-            this.lvwProcess.Location = new System.Drawing.Point(0, 1);
+            this.lvwProcess.Location = new System.Drawing.Point(25, 15);
             this.lvwProcess.Name = "lvwProcess";
-            this.lvwProcess.Size = new System.Drawing.Size(800, 407);
+            this.lvwProcess.Size = new System.Drawing.Size(750, 392);
             this.lvwProcess.TabIndex = 0;
             this.lvwProcess.UseCompatibleStateImageBehavior = false;
             this.lvwProcess.View = System.Windows.Forms.View.Details;
@@ -216,6 +246,7 @@
             this.panelFunction.ResumeLayout(false);
             this.panelFunction.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
+            this.panelBottonOfListView.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -237,5 +268,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ImageList ilstIcons;
         private ImageList imageList1;
+        private MyUserControl.SearchBox SearchBox;
+        private Panel panelBottonOfListView;
     }
 }

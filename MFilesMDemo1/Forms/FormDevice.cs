@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MFilesMDemo2.Forms
+namespace MFilesMDemo1.Forms
 {
     public partial class FormDevice : Form
     {

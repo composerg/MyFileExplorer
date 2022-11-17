@@ -15,7 +15,7 @@ using System.Security.AccessControl;
 using MFilesMDemo1.Forms;
 using Sunny.UI;
 
-namespace MFilesMDemo2.Forms
+namespace MFilesMDemo1.Forms
 {
     public partial class FormFiles : Form
     {
